@@ -15,7 +15,7 @@ JanusGraph has a specialty tests, disabled by default, intended to generate basi
 JanusGraph runs continuous integration via Github Actions; see the [dashboard](https://github.com/JanusGraph/janusgraph/actions) for current status.
 
 ## JUnit
-
+  
 ### JUnit Test Tags
 
 All of JanusGraph's tests are written for JUnit.  JanusGraph's JUnit tests are annotated with the following [JUnit Tags](https://junit.org/junit5/docs/current/user-guide/#writing-tests-tagging-and-filtering):
