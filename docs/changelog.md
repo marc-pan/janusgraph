@@ -27,8 +27,8 @@ All currently supported versions of JanusGraph are listed below.
 
 | JanusGraph | Storage Version | Cassandra | HBase | Bigtable | ScyllaDB | Elasticsearch | Solr | TinkerPop | Spark | Scala |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| 1.1.z | 2 | 3.11.z, 4.0.z | 2.6.z | 1.3.0, 1.4.0, 1.5.z, 1.6.z, 1.7.z, 1.8.z, 1.9.z, 1.10.z, 1.11.z, 1.14.z | 5.y | 6.y, 7.y, 8.y | 8.y | 3.7.z | 3.2.z | 2.12.z |
-| 1.0.z | 2 | 3.11.z, 4.0.z | 2.5.z | 1.3.0, 1.4.0, 1.5.z, 1.6.z, 1.7.z, 1.8.z, 1.9.z, 1.10.z, 1.11.z, 1.14.z | 5.y | 6.y, 7.y, 8.y | 8.y | 3.7.z | 3.2.z | 2.12.z |
+| 1.2.z | 2 | 3.11.z, 4.0.z | 2.6.z | 1.3.0, 1.4.0, 1.5.z, 1.6.z, 1.7.z, 1.8.z, 1.9.z, 1.10.z, 1.11.z, 1.14.z | 6.y | 6.y, 7.y, 8.y | 8.y | 3.7.z | 3.2.z | 2.12.z |
+| 1.1.z | 2 | 3.11.z, 4.0.z | 2.6.z | 1.3.0, 1.4.0, 1.5.z, 1.6.z, 1.7.z, 1.8.z, 1.9.z, 1.10.z, 1.11.z, 1.14.z | 6.y | 6.y, 7.y, 8.y | 8.y | 3.7.z | 3.2.z | 2.12.z |
 
 !!! info
     Even so ScyllaDB is marked as `N/A` prior version 1.0.0 it was actually supported using `cql` storage option. 
@@ -47,10 +47,59 @@ The versions of JanusGraph listed below are outdated and will no longer receive 
 | 0.4.z | 2 | 2.1.z, 2.2.z, 3.0.z, 3.11.z | 1.2.z, 1.3.z, 1.4.z, 2.1.z | N/A | N/A | 5.y, 6.y | 7.y | 3.4.z | 2.2.z | 2.11.z |
 | 0.5.z | 2 | 2.1.z, 2.2.z, 3.0.z, 3.11.z | 1.2.z, 1.3.z, 1.4.z, 2.1.z | 1.3.0, 1.4.0, 1.5.z, 1.6.z, 1.7.z, 1.8.z, 1.9.z, 1.10.z, 1.11.z, 1.14.z | N/A | 6.y, 7.y | 7.y | 3.4.z | 2.2.z | 2.11.z | 
 | 0.6.z | 2 | 3.0.z, 3.11.z | 1.6.z, 2.2.z | 1.3.0, 1.4.0, 1.5.z, 1.6.z, 1.7.z, 1.8.z, 1.9.z, 1.10.z, 1.11.z, 1.14.z | N/A | 6.y, 7.y | 7.y, 8.y | 3.5.z | 3.0.z | 2.12.z |
+| 1.0.z | 2 | 3.11.z, 4.0.z | 2.5.z | 1.3.0, 1.4.0, 1.5.z, 1.6.z, 1.7.z, 1.8.z, 1.9.z, 1.10.z, 1.11.z, 1.14.z | 5.y | 6.y, 7.y, 8.y | 8.y | 3.7.z | 3.2.z | 2.12.z |
 
 ## Release Notes
 
-### Version 1.1.0 (Release Date: ???)
+### Version 1.2.0 (Release Date: ???)
+
+/// tab | Maven
+```xml
+<dependency>
+    <groupId>org.janusgraph</groupId>
+    <artifactId>janusgraph-core</artifactId>
+    <version>1.2.0</version>
+</dependency>
+```
+///
+
+/// tab | Gradle
+```groovy
+compile "org.janusgraph:janusgraph-core:1.2.0"
+```
+///
+
+**Tested Compatibility:**
+
+* Apache Cassandra 3.11.10, 4.0.6
+* Apache HBase 2.6.0
+* Oracle BerkeleyJE 7.5.11
+* ScyllaDB 6.2.0
+* Elasticsearch 6.0.1, 6.6.0, 7.17.8, 8.15.3
+* Apache Lucene 8.11.1
+* Apache Solr 8.11.1
+* Apache TinkerPop 3.7.3
+* Java 8, 11
+
+**Installed versions in the Pre-Packaged Distribution:**
+
+* Cassandra 4.0.6
+* Elasticsearch 7.14.0
+
+#### Changes
+
+For more information on features and bug fixes in 1.2.0, see the GitHub milestone:
+
+-   <https://github.com/JanusGraph/janusgraph/milestone/30?closed=1>
+
+#### Assets
+
+* [JavaDoc](https://javadoc.io/doc/org.janusgraph/janusgraph-core/1.2.0)
+* [GitHub Release](https://github.com/JanusGraph/janusgraph/releases/tag/v1.2.0)
+* [JanusGraph zip](https://github.com/JanusGraph/janusgraph/releases/download/v1.2.0/janusgraph-1.2.0.zip)
+* [JanusGraph zip with embedded Cassandra and ElasticSearch](https://github.com/JanusGraph/janusgraph/releases/download/v1.2.0/janusgraph-full-1.2.0.zip)
+
+### Version 1.1.0 (Release Date: November 7, 2024)
 
 /// tab | Maven
 ```xml
@@ -73,11 +122,11 @@ compile "org.janusgraph:janusgraph-core:1.1.0"
 * Apache Cassandra 3.11.10, 4.0.6
 * Apache HBase 2.6.0
 * Oracle BerkeleyJE 7.5.11
-* ScyllaDB 5.1.4
-* Elasticsearch 6.0.1, 6.6.0, 7.17.8, 8.10.4
+* ScyllaDB 6.2.0
+* Elasticsearch 6.0.1, 6.6.0, 7.17.8, 8.15.3
 * Apache Lucene 8.11.1
 * Apache Solr 8.11.1
-* Apache TinkerPop 3.7.0
+* Apache TinkerPop 3.7.3
 * Java 8, 11
 
 **Installed versions in the Pre-Packaged Distribution:**
@@ -128,7 +177,64 @@ Example: `storage.berkeleyje.ext.je.lock.timeout=5000 ms`
 For simplicity JSON schema initialization options has been added into JanusGraph.
 See [documentation](./schema/schema-init-strategies.md) to learn more about JSON schema initialization process.
 
-### Version 1.0.1 (Release Date: ???)
+##### Batched Queries Enhancement: Introduction of `JanusGraphNoOpBarrierVertexOnlyStep`
+
+In previous versions, when a query that could benefit from batch-query optimization (multi-query) was executed without
+a user-defined barrier step, JanusGraph would inject a `NoOpBarrierStep` by default. This approach allowed batching
+for edges and properties, which do not gain advantages from multi-query optimization.
+
+Starting with JanusGraph 1.1.0, this behavior has been improved. The system now injects a
+`JanusGraphNoOpBarrierVertexOnlyStep` instead of the standard `NoOpBarrierStep` when no barrier steps are detected.
+This change ensures that batching is applied exclusively to vertices, which do benefit from batch queries,
+while excluding edges and properties from the batching process.
+
+If a user explicitly defines a `.barrier()` step in the query, the system will continue to use the `NoOpBarrierStep` as expected.
+
+##### Batch Query Optimizations Now Support Traversals Containing the `drop()` Step
+
+Starting with JanusGraph 1.1.0, batch optimizations for vertex removal have been introduced in the `drop()` step and
+are enabled by default. Previously, any batch optimization would be skipped for queries containing at least one
+`drop()` step. However, with this update, such queries are now eligible for batch query optimization (multi-query).
+
+Please note that the `LazyBarrierStrategy` (a TinkerPop strategy) is disabled for any query that includes at least one `drop()` step.
+
+To disable the `drop()` step optimization and maintain the previous behavior, users can set the following configuration:
+```
+query.batch.drop-step-mode=none
+```
+
+##### Lazy Loading for Relations
+
+The new transaction configuration option is added `lazyLoadRelations()` which sets lazy-load for all properties and edges 
+of the vertex. If enabled, then ids and values are deserialized upon demand.  
+When enabled, it can lead to a performance improvement on large-scale read operations, if only certain types of relations are being read from the vertex.  
+See performance comparison in [GitHub PR #4343](https://github.com/JanusGraph/janusgraph/pull/4343/#issuecomment-2079839853).
+
+##### Text predicates support extended for remote connections
+
+The following text predicates can now be used with remote connections:
+
+* textNotContains
+* textNotContainsFuzzy
+* textNotContainsPrefix
+* textNotContainsRegex
+* textContainsPhrase
+* textNotContainsPhrase
+* textNotFuzzy
+* textNotPrefix
+* textNotRegex
+
+##### Vertex mutation optimizations
+
+The following improvements are made for adding new vertex or updating vertex properties:
+
+* Improved operations to detect vertex changes during transaction-commit from O(N) to O(1);
+* Optimizing properties search by key for newly-created vertex;
+* Optimizing previous property/edge search during vertex update;
+
+For more information see [GitHub PR #4292](https://github.com/JanusGraph/janusgraph/pull/4292)
+
+### Version 1.0.1 (Release Date: November 6, 2024)
 
 /// tab | Maven
 ```xml
@@ -152,10 +258,10 @@ compile "org.janusgraph:janusgraph-core:1.0.1"
 * Apache HBase 2.5.8
 * Oracle BerkeleyJE 7.5.11
 * ScyllaDB 5.1.4
-* Elasticsearch 6.0.1, 6.6.0, 7.17.8, 8.10.4
+* Elasticsearch 6.0.1, 6.6.0, 7.17.8, 8.15.3
 * Apache Lucene 8.11.1
 * Apache Solr 8.11.1
-* Apache TinkerPop 3.7.0
+* Apache TinkerPop 3.7.3
 * Java 8, 11
 
 **Installed versions in the Pre-Packaged Distribution:**
